@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Arbaz</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+</head>
+<body>
+  <!--header-->
+  <header class="nav-bar flex">
+    <div class="container-logo">
+      <img class="logo" src="assets/logo.png" alt="logo">
+    </div>
+    <nav>
+        <ul class="nav-links">
+          <li class="nav-child"><a class="nav-child" href="#">Home</a></li>
+          <li class="nav-child"><a class="nav-child" href="#about_me">About</a></li>
+          <li class="nav-child"><a class="nav-child" href="#contact_page">Contact</a></li>
+        </ul>
+    </nav>
+    <!--hamburger icon-->
+      <a href="#" class="nav-toggle hover-link" id="nav-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </a>
+
+  </header>
+
+  <div class="content-container">
+
+  <!--intro section-->
+  <div class="intro">
+    <div class="content">
+      <h3 class="greeting">Hi! ✋,</h3>
+      <br>
+      <h2 class="name">I'm Arbaz</h2>
+      <br>
+      <h1 id="dynamic"></h1>
+    </div>
+      <div class="resume-link">
+        <a class='resume' href="assets/__Arbaz__.pdf" download="Arbaz">Link to resume</a>
+      </div>
+
+  </div>
+
+
+
+  <!--tech stack-->
+  <h1 class="current-stack">
+      Current Stack
+  </h1>
+  <br>
+  <div class="tech-stack flex">
+    <img class='stack-element' src="assets/html.png" alt="html">
+    <img class='stack-element' src="assets/css.png" alt="css">
+    <img class='stack-element' src="assets/js.png" alt="js">
+    <img class='stack-element' src="assets/py.png" alt="python">
+    <img class='stack-element' src="assets/sql.png" alt="sql">
+    <img class='stack-element' src="assets/cpp.png" alt="cpp">
+    <img class='stack-element' src="assets/c.png" alt="c">
+  </div>
+
+  <hr>
+  <!--About me-->
+  <section id="about_me" class="aboutMe">
+    <a href="#">
+    <h1 class="about-head">About Me</h1>
+    </a>
+    <br>
+    <div class="main-content">
+
+      <p class="about-para">
+        Hi there! I'm Arbaz Essaq Khan, a passionate and driven professional with a knack for problem-solving and a heart for serving others. I graduated with a B.Tech in Computer Science from the University of Kashmir in 2023.
+    </p>
+    <!-- <button class="read_more">Read more</button>
+    
+    <span class="hid"> -->
+    <br>
+    <p class="about-para">
+        With experience as a Subject Matter Expert (SME) at an education firm, I've honed my skills in understanding complex concepts and communicating them effectively. My passion lies in leveraging technology to make life easier for people, and I thrive on the challenges of software development.
+    </p>
+    <br>
+    <p class="about-para">
+        I hold certifications in various fields, including programming, web design, and content writing, which reflect my dedication to continuous learning and growth. My drive to uphold integrity and excellence in everything I do fuels my commitment to delivering high-quality work.
+    </p>
+    <br>
+    <p class="about-para">
+        Outside of the professional realm, I find joy in building things, whether it's crafting elegant code or constructing strategies to tackle real-world problems. When I'm not immersed in technology, you can find me on the cricket field, kicking a football, or engaging in the thrilling sport of arm wrestling.
+    </p>
+        
+    <br>
+    <p class="about-para">
+        Let's connect and explore how we can collaborate to create impactful solutions together.
+    </p>
+    </span>
+
+  </div>
+  
+  </section>
+
+  <!--project section-->
+
+    <section class="project-section">
+      <h1 class='project'>Projects</h1>
+      <div class="slider">
+        <img class='slide active' src="assets/cal.png" alt="project-image" onclick="goToSlide(0)">
+        <img class='slide' src="assets/todo.png" alt="project-image" onclick="goToSlide(1)">
+        <img class='slide' src="assets/clone.png" alt="project-image" onclick="goToSlide(2)">
+        <img class='slide' src="assets/news.png" alt="project-image" onclick="goToSlide(3)">
+      </div>
+      <div class="btn">
+        <button class="prev" onclick="prevSlide()">Prev</button>
+        <button class="next" onclick="nextSlide()">Next</button>
+      </div>
+      </div>
+    </section>
+
+  <br>
+  <hr>
+  <!--contact-->
+
+  <h2 class="contac-head">Contact Me</h2>
+  <form id="contact_page" class="contac">
+      <label for="name">Name:</label>
+      <input placeholder="enter the name" id="nam" name="name" type="text" required>
+      <br>
+      <label for="email">Email:</label>
+      <input placeholder="enter the email"  id="email" name="email" type="email" required>
+      <br>
+      <label id="l-msg" for="name">Message:</label>
+      <textarea name="msg" id="msg"rows="4"required></textarea>
+      <br>
+      <button class="submit-btn" type="submit">submit</button>
+
+  </form>
+
+    <!-- Footer -->
+
+    <footer>
+      <div class="footer-container">
+        <a href="arbazibnishaq@gmail.com" class="footer-link">
+          <i class="fa-regular fa-envelope"></i> Email
+        </a>
+        <a href="https://www.linkedin.com/in/arbaz-khan-4a5a621a1/" class="footer-link" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>LinkedIn
+        </a>
+        <a href="https://www.instagram.com/arbazibn/" class="footer-link" target="_blank">
+          <i class="fa-brands fa-instagram"></i>Instagram
+        </a>
+      </div>
+      <div class="cw">&copy; 2024 My Website</div>
+    </footer>
+
+</div>
+       <script src="https://kit.fontawesome.com/d14f6bc67a.js" crossorigin="anonymous"></script>
+  <script src="script.js">
+  </script>
+</body>
+</html>

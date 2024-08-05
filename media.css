@@ -1,0 +1,28 @@
+@media screen and (max-width: 991px) {
+  /* hamburger*/
+  .nav-toggle{
+    display: block;
+    margin-right: 20px;
+  }
+
+  .nav-bar{
+    overflow: initial;
+  }
+  .nav-links
+  {
+    position: absolute;
+    background-color: white;
+    top:100%;
+    left: -100%;
+    width: 100%;
+    padding-block: 20px;
+    transition: 0.2s ease-in-out;
+ }
+ .nav-links.active{
+    left: 0;
+ }
+
+ .nav-links ul{
+    flex-direction: column;
+ }
+}
