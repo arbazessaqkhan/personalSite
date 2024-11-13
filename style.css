@@ -7,7 +7,6 @@
 
 /*   --primary-btn: #007bff;
   --primary-btn: #0056b3; */
- 
 
 .content-container{
   width: 80%;
@@ -59,11 +58,20 @@ body{
   z-index: 100;
 }
 
+
+
 /* intro */
-.intro,.current-stack{
+.intro{
+  display:flex;
+  justify-content: space-between;
   margin-top: 8rem;
   color: #fff;
 }
+.current-stack{
+  margin-top: 8rem;
+  color: #fff;
+}
+
 .greeting{
   font-size: 2rem;
 }
@@ -100,23 +108,25 @@ body{
 .stack-element{
   height: 60%;
   object-fit: cover;
-  background-color: #fff;
   border-radius: 20%;
 }
 .resume-container{
   margin: 0;
   text-align: center;
 }
-.resume,.nav-child{
-  text-decoration: none;
+.resume,.nav-content{
   padding: 4px 8px;
   border-style: none;
   color: #000;
+  background-color: #fff;
+  text-decoration: none;
   background-color: var(--primary-btn);
   border-radius: 5px;
   cursor: pointer;
   font-family: var(--primary-btn);
   font-weight: bold;
+  font-size: large;
+  margin-block: 3px;
 }
 
 /* .nav-child:hover{
@@ -124,11 +134,12 @@ body{
   transform: translateY(-1px);
   transition: 0.25s ease-in-out;
 } */
-.resume:hover{
-  background-color: var(--primary-btn);
-  text-decoration: underline;
+.nav-content:hover{
+  background-color: #000;
+  color:#fff;
+  transition: 0.2s ease-in-out;
+  /* text-decoration: underline; */
 }
-
 
 .about-head{
   text-decoration: underline;
@@ -141,9 +152,6 @@ body{
   font-family: var(--secondary-font);
   font-size: 18px;
   overflow: hidden;
-}
-.hid{
-  display: none;
 }
 /* .read_more{
   margin-top: 0.2rem;
@@ -159,6 +167,7 @@ body{
 .project-section{
   color: #fff;
   margin-top: 2rem;
+  
 }
 .project{
   font-size: 2rem;
@@ -167,21 +176,32 @@ body{
   text-align: center;
 }
 .slider{
-  margin: 0 auto;
   position: relative;
-  width: 600px;
+  max-width: 800px;
+  left:0;
+  right: 0;
+  margin: 0 auto;
+  
 }
-p{
-  background-color: #fff;
-}
+
 .slide{
   position: absolute;
   opacity: 0;
-  max-width: 600px;
+  max-width: 100%;
   z-index: 0;
+  box-shadow: 5px 5px 8px #000;
+  border-radius: 1%;
+
 }
+
+p{
+  background-color: #fff;
+}
+
 .active{
   opacity: 1;
+  background-color: #000;
+  color:#fff;
 }
 
 @keyframes fading{
@@ -210,11 +230,12 @@ p{
 /* contact us */
 
 form, .main-content {
-  max-width: 600px;
+  max-width: 800px;
   background-color: #fff;
   padding: 20px;
   border-radius: 5px;
   margin: 0 auto;
+  box-shadow: 5px 5px 8px #000;
 }
 
 .contac-head{
@@ -281,4 +302,36 @@ footer {
   padding-top: 2rem;
 }
 
+.logo{
+  display: inline-block;
+  width: 70px;
+  height: 50px;
+}
 
+/* .image-3d-div{
+  width:fit-content;
+} */
+
+.image-3d{
+ /* background: no-repeat; */
+ max-width: 30em;
+ height: 100%;
+ border: 1px solid #3d6b65;
+ border-radius: 8px;
+ object-fit: cover;
+}
+
+.iti--show-flags{
+  width: 100%;
+}
+
+.submit-btn{
+  font-weight: bold;
+  font-size: medium;
+
+}
+.contac{
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}

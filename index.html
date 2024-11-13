@@ -4,22 +4,36 @@
   <title>Arbaz</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="media.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@24.7.0/build/css/intlTelInput.css">
+  <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@24.7.0/build/js/intlTelInput.min.js"></script>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+
+  </script>
 </head>
 <body>
   <!--header-->
   <header class="nav-bar flex">
-    <div class="container-logo">
+    <a href="#home">
       <img class="logo" src="assets/logo.png" alt="logo">
-    </div>
+    </a>
+  
+    <section id="home-section"></section>
     <nav>
         <ul class="nav-links">
-          <li class="nav-child"><a class="nav-child" href="#">Home</a></li>
-          <li class="nav-child"><a class="nav-child" href="#about_me">About</a></li>
-          <li class="nav-child"><a class="nav-child" href="#contact_page">Contact</a></li>
+          <a class="nav-content home-section active" href="#" id="home">Home</a>
+          <a class="nav-content about_me" href="#about_me" id="about">About me</a>
+          <a class="nav-content contact_page" href="#contact_page" id="contact">Contact me</a>
+          <a class='nav-content' href="assets/__Arbaz__.pdf" download="Arbaz">Resume</a>
+          <a class="nav-content" href="https://github.com/arbazessaqkhan" id="github" target="_blank">Github</a>
+          
         </ul>
     </nav>
     <!--hamburger icon-->
-      <a href="#" class="nav-toggle hover-link" id="nav-toggle">
+      <a class="nav-toggle hover-link" id="nav-toggle">
         <i class="fa-solid fa-bars"></i>
       </a>
 
@@ -28,17 +42,18 @@
   <div class="content-container">
 
   <!--intro section-->
-  <div class="intro">
+  <div class="intro flex">
     <div class="content">
-      <h3 class="greeting">Hi! ✋,</h3>
+      <h3 class="greeting">Hello ✋! </h3>
       <br>
-      <h2 class="name">I'm Arbaz</h2>
+      <h2 class="name">Greetings from</h2>
       <br>
       <h1 id="dynamic"></h1>
     </div>
-      <div class="resume-link">
-        <a class='resume' href="assets/__Arbaz__.pdf" download="Arbaz">Link to resume</a>
-      </div>
+    
+    <div class="image-3d-div">
+      <img class="image-3d" src="assets/new-right.jpg" alt="3d-img">
+    </div>
 
   </div>
 
@@ -49,34 +64,41 @@
       Current Stack
   </h1>
   <br>
+  <br>
   <div class="tech-stack flex">
     <img class='stack-element' src="assets/html.png" alt="html">
     <img class='stack-element' src="assets/css.png" alt="css">
     <img class='stack-element' src="assets/js.png" alt="js">
-    <img class='stack-element' src="assets/py.png" alt="python">
+    <img class='stack-element' src="assets/python.png" alt="python">
     <img class='stack-element' src="assets/sql.png" alt="sql">
-    <img class='stack-element' src="assets/cpp.png" alt="cpp">
-    <img class='stack-element' src="assets/c.png" alt="c">
+    <img class='stack-element' src="assets/C_Logo.png" alt="cpp">
+    <img class='stack-element' src="assets/c++.png" alt="c++">
+    <img class='stack-element' src="assets/php.png" alt="php">
+    <!-- <img class='stack-element' src="assets/laravel.png" alt="c"> -->
   </div>
-
+  <br>
+  <br>
+  <section id="about_me" class="aboutMe"></section>
   <hr>
+  <br>
+  <br>
+  <br>
   <!--About me-->
-  <section id="about_me" class="aboutMe">
-    <a href="#">
-    <h1 class="about-head">About Me</h1>
-    </a>
-    <br>
+      <h1 class="about-head">About Me</h1>
+
+      <br>
+      <br>
     <div class="main-content">
 
       <p class="about-para">
-        Hi there! I'm Arbaz Essaq Khan, a passionate and driven professional with a knack for problem-solving and a heart for serving others. I graduated with a B.Tech in Computer Science from the University of Kashmir in 2023.
+        Hi there! My name is Arbaz, a passionate and driven professional with a knack for problem-solving and a heart for serving others. I graduated with a Bachelors in Tech in Computer Science from the University of Kashmir in 2023.
     </p>
     <!-- <button class="read_more">Read more</button>
     
     <span class="hid"> -->
     <br>
     <p class="about-para">
-        With experience as a Subject Matter Expert (SME) at an education firm, I've honed my skills in understanding complex concepts and communicating them effectively. My passion lies in leveraging technology to make life easier for people, and I thrive on the challenges of software development.
+        With experience as a Subject Matter Expert (SME) at an education firm and Software intern at a startup, I've honed my skills in understanding complex concepts and communicating them effectively. My passion lies in leveraging technology to make life easier for people, and I thrive on the challenges of software development.
     </p>
     <br>
     <p class="about-para">
@@ -98,9 +120,9 @@
   </section>
 
   <!--project section-->
-
-    <section class="project-section">
-      <h1 class='project'>Projects</h1>
+    <div class="project-section">
+      <h1 class='project'>Work</h1>
+      <br>
       <div class="slider">
         <img class='slide active' src="assets/cal.png" alt="project-image" onclick="goToSlide(0)">
         <img class='slide' src="assets/todo.png" alt="project-image" onclick="goToSlide(1)">
@@ -112,24 +134,39 @@
         <button class="next" onclick="nextSlide()">Next</button>
       </div>
       </div>
-    </section>
+    </div>
 
+    <section id="contact_page"></section>
+  <br>
   <br>
   <hr>
-  <!--contact-->
 
+  <!--contact-->
   <h2 class="contac-head">Contact Me</h2>
-  <form id="contact_page" class="contac">
+  <br>
+  <form method="post" id="contact_page" class="contac">
+    <div>
       <label for="name">Name:</label>
-      <input placeholder="enter the name" id="nam" name="name" type="text" required>
-      <br>
+      <input placeholder="PLEASE ENTER YOUR NAME" id="nam" name="name" type="text" required>
+    </div>
+      
+    <div>
       <label for="email">Email:</label>
-      <input placeholder="enter the email"  id="email" name="email" type="email" required>
-      <br>
+      <input placeholder="PLEASE ENTER YOUR EMAIL"  id="email" name="email" type="email" required>
+    </div>
+      
+    <div>
+      <label for="phone">Phone:</label>
+      <input placeholder="PLEASE ENTER YOUR CELL NUMBER" id="phone" type="text" name="phone">
+    </div>
+      
+
+    <div>
       <label id="l-msg" for="name">Message:</label>
       <textarea name="msg" id="msg"rows="4"required></textarea>
-      <br>
-      <button class="submit-btn" type="submit">submit</button>
+    </div>
+      
+    <input style="color:white;" onMouseOver="this.style.color='#000'" onMouseOut="this.style.color='#FFF'" type="button" id="button" value="Send Email" onclick="sendEmail()" class="submit-btn">
 
   </form>
 
@@ -141,17 +178,55 @@
           <i class="fa-regular fa-envelope"></i> Email
         </a>
         <a href="https://www.linkedin.com/in/arbaz-khan-4a5a621a1/" class="footer-link" target="_blank">
-          <i class="fa-brands fa-linkedin"></i>LinkedIn
+          <i class="fa-brands fa-linkedin"></i> LinkedIn
         </a>
         <a href="https://www.instagram.com/arbazibn/" class="footer-link" target="_blank">
-          <i class="fa-brands fa-instagram"></i>Instagram
+          <i class="fa-brands fa-instagram"></i> Instagram
         </a>
       </div>
       <div class="cw">&copy; 2024 My Website</div>
     </footer>
 
 </div>
-       <script src="https://kit.fontawesome.com/d14f6bc67a.js" crossorigin="anonymous"></script>
+
+
+
+
+<script>
+const phone = document.querySelector("#phone");
+window.intlTelInput(phone, {
+  loadUtilsOnInit: "https://cdn.jsdelivr.net/npm/intl-tel-input@24.7.0/build/js/utils.js",
+});
+
+(function(){
+    emailjs.init("EkbBX9iDWTN6Jp35o"); 
+  })();
+
+  function sendEmail() {
+    const name = document.getElementById('nam').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    const message = document.getElementById('msg').value;
+
+    // Send email with these values
+    emailjs.send("service_5bty7bi", "template_f7x1gtt", {
+      name: name,       // `name` should match your template variable
+      email: email,     // `email` should match your template variable
+      phone: phone,     // `phone` should match your template variable
+      msg: message      // `msg` should match your template variable
+    })
+    .then((response) => {
+      alert("Mail sent successfully!");
+    })
+    .catch((error) => {
+      alert("Failed to send email: " + JSON.stringify(error));
+    });
+  }
+
+</script>
+
+
+  <script src="https://kit.fontawesome.com/d14f6bc67a.js" crossorigin="anonymous"></script>
   <script src="script.js">
   </script>
 </body>

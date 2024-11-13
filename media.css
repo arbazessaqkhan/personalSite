@@ -3,6 +3,7 @@
   .nav-toggle{
     display: block;
     margin-right: 20px;
+    cursor: pointer;
   }
 
   .nav-bar{
@@ -11,18 +12,41 @@
   .nav-links
   {
     position: absolute;
-    background-color: white;
-    top:100%;
+    background-color: #3d6b65;;
+    top:80%;
     left: -100%;
     width: 100%;
-    padding-block: 20px;
+    padding-block: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap:0;
     transition: 0.2s ease-in-out;
  }
  .nav-links.active{
     left: 0;
  }
 
- .nav-links ul{
-    flex-direction: column;
+ .nav-child{
+  margin: 2px;
+  padding-inline: 0;
  }
+
+ .image-3d, .content{
+  max-width: 100%;
+  margin: 3em auto;
+ }
+
+ .slider{
+  left:0;
+  right: 0;
+  margin: 0 auto;
+ }
+ .slide{
+  left:0;
+  right: 0;
+  margin: 0 auto;
+ }
+
+
 }
