@@ -184,7 +184,6 @@ body{
   margin: 0 auto;
   
 }
-
 .slide{
   position: absolute;
   opacity: 0;
@@ -192,7 +191,10 @@ body{
   z-index: 0;
   box-shadow: 5px 5px 8px #000;
   border-radius: 1%;
-
+}
+.prev, .next{
+  font-size: 2rem;
+  margin-right: 0.3rem;
 }
 
 p{
@@ -335,4 +337,7 @@ footer {
   max-width: 800px;
   margin: 0 auto;
   margin-bottom: 100px;
+}
+input{
+  font-size: 7rem;
 }

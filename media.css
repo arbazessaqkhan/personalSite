@@ -55,7 +55,8 @@
   padding-inline: 0;
  }
  .image-3d-div{
-  margin-top: 5rem;
+  margin-block: 10rem;
+  height: 45rem;
  }
 
  .image-3d, .content{
@@ -63,29 +64,48 @@
   margin: 3em auto;
  }
  .current-stack, .about-head, .project, .contac-head{
-  font-size: 4rem;
+  margin-block: 5rem;
+  font-size: 5rem;
  }
  .about-para{
   font-size: 1.7rem;
  }
+ .hr-learn{
+  margin-block: 10rem;
+ }
+
 
  .tech-stack{
   height: 15rem;
+  margin-bottom: 10rem;
 }
 
  .slider{
   left:0;
   right: 0;
   margin: 0 auto;
+  height: 60vh;
+  border: 2px solid red;
  }
  .slide{
   left:0;
   right: 0;
   margin: 0 auto;
+  height: 100%;
  }
 
  .contac{
   font-size: 1.7rem;
+  height: 80vh;
+ }
+input,input::placeholder{
+  font: 5rem;
+  height: 3rem;
+ }
+
+ footer{
+  height:30vh;
+  font-size: 2rem;
  }
 
 }
