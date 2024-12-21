@@ -87,28 +87,32 @@
   left:0;
   right: 0;
   margin: 0 auto;
-  height: 80vh;
+  height: 60vh;
  }
  .slide{
   left:0;
   right:0;
   top:0;
   bottom:0;
-  height: 60%;
+  height: 80%;
 
  }
-
+ .prev,.next{
+  font-size: 3rem;
+ }
  .contac{
   font-size: 1.7rem;
-  height: 80vh;
  }
-input,input::placeholder, label, .footer-link{
+
+input,input::placeholder, label{
   font: 5rem;
-  height: 3rem;
+  height: 4rem;
+ }
+ .footer-link{
+  font-size: 3rem;
  }
 
  footer{
-  height:30vh;
   font-size: 2rem;
  }
 
