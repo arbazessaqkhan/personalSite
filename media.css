@@ -67,6 +67,9 @@
   margin-block: 5rem;
   font-size: 5rem;
  }
+ .project-section{
+  margin-block: 5rem;
+ }
  .about-para{
   font-size: 1.7rem;
  }
@@ -84,21 +87,22 @@
   left:0;
   right: 0;
   margin: 0 auto;
-  height: 60vh;
-  border: 2px solid red;
+  height: 80vh;
  }
  .slide{
   left:0;
-  right: 0;
-  margin: 0 auto;
-  height: 100%;
+  right:0;
+  top:0;
+  bottom:0;
+  height: 60%;
+
  }
 
  .contac{
   font-size: 1.7rem;
   height: 80vh;
  }
-input,input::placeholder{
+input,input::placeholder, label, .footer-link{
   font: 5rem;
   height: 3rem;
  }
