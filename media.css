@@ -1,4 +1,7 @@
 @media screen and (max-width: 991px) {
+  *{
+    font-family: Arial, Helvetica, sans-serif;
+  }
   /* hamburger*/
   .nav-toggle{
     display: block;
@@ -41,7 +44,7 @@
     flex-direction: column;
     row-gap:0;
     transition: 0.2s ease-in-out;
-    padding-bottom: 80%;
+    padding-bottom: 120%;
  }
  .nav-links.active{
     left: 0;
@@ -53,13 +56,22 @@
  }
  .image-3d-div{
   margin-top: 5rem;
-  height: 110vh;
  }
 
  .image-3d, .content{
   max-width: 100%;
   margin: 3em auto;
  }
+ .current-stack, .about-head, .project, .contac-head{
+  font-size: 4rem;
+ }
+ .about-para{
+  font-size: 1.7rem;
+ }
+
+ .tech-stack{
+  height: 15rem;
+}
 
  .slider{
   left:0;
@@ -72,5 +84,8 @@
   margin: 0 auto;
  }
 
+ .contac{
+  font-size: 1.7rem;
+ }
 
 }
