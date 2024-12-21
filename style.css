@@ -346,6 +346,8 @@ footer {
   max-width: 800px;
   margin: 0 auto;
   margin-bottom: 100px;
+  padding-inline: 2rem;
+  padding-block: 3rem;
 }
 input{
   font-size: 7rem;

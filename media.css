@@ -69,6 +69,7 @@
  }
  .project-section{
   margin-block: 5rem;
+  margin-top: 10rem;
  }
  .about-para{
   font-size: 1.7rem;
@@ -101,7 +102,7 @@
   font-size: 3rem;
  }
  .contac{
-  font-size: 1.7rem;
+  font-size: 3rem;
  }
 
 input,input::placeholder, label{
