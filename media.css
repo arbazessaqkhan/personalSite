@@ -2,18 +2,37 @@
   /* hamburger*/
   .nav-toggle{
     display: block;
-    margin-right: 20px;
+    margin-right: 2.2rem;
     cursor: pointer;
+    font-size: 4rem;
+  }
+  .greeting, .name{
+    font-size: 6rem;
+  }
+  #dynamic{
+    font-size: 3.6rem;
+    font-family: 'Courier New', Courier, monospace;
   }
 
   .nav-bar{
     overflow: initial;
+    padding-block: 1rem;
+  }
+  .logo{
+    margin-left: 2.5rem;
+    width: 7rem;
+    height: 5rem;
+  }
+  .nav-content{
+    margin-block: 10px;
+    padding-block: 20px;
+    font-size: 4rem;
   }
   .nav-links
   {
     position: absolute;
-    background-color: #3d6b65;;
-    top:80%;
+    background-color: #3d6b65;
+    top:90%;
     left: -100%;
     width: 100%;
     padding-block: 10px;
@@ -22,6 +41,7 @@
     flex-direction: column;
     row-gap:0;
     transition: 0.2s ease-in-out;
+    padding-bottom: 80%;
  }
  .nav-links.active{
     left: 0;
@@ -30,6 +50,10 @@
  .nav-child{
   margin: 2px;
   padding-inline: 0;
+ }
+ .image-3d-div{
+  margin-top: 5rem;
+  height: 110vh;
  }
 
  .image-3d, .content{
