@@ -24,18 +24,18 @@
     <section id="home-section"></section>
     <nav>
         <ul class="nav-links">
-          <a class="nav-content home-section active" href="#" id="home">Home</a>
-          <a class="nav-content about_me" href="#about_me" id="about">About me</a>
-          <a class="nav-content contact_page" href="#contact_page" id="contact">Contact me</a>
-          <a class='nav-content' href="assets/__Arbaz__.pdf" download="Arbaz">Resume</a>
-          <a class="nav-content" href="https://github.com/arbazessaqkhan" id="github" target="_blank">Github</a>
-          
+          <li><a class="nav-content home-section active" href="#" id="home">Home</a></li>
+          <li><a class="nav-content about_me" href="#about_me" id="about">About me</a></li>
+          <li><a class="nav-content contact_page" href="#contact_page" id="contact">Contact me</a></li>
+          <li><a class='nav-content' href="assets/__Arbaz__.pdf" download="Arbaz">Resume</a></li>
+          <li><a class="nav-content" href="https://github.com/arbazessaqkhan" id="github" target="_blank">Github</a></li>
         </ul>
     </nav>
     <!--hamburger icon-->
-      <a class="nav-toggle hover-link" id="nav-toggle">
+      <a class="nav-toggle hover-link" id="nav-toggle" tabindex="0" aria-label="Open navigation menu" aria-expanded="false">
         <i class="fa-solid fa-bars"></i>
       </a>
+    <div class="nav-overlay" id="nav-overlay" tabindex="-1" aria-hidden="true"></div>
 
   </header>
 
@@ -63,18 +63,17 @@
   <h1 class="current-stack">
       Current Stack
   </h1>
-  <br>
-  <br>
-  <div class="tech-stack flex">
-    <img class='stack-element' src="assets/html.png" alt="html">
-    <img class='stack-element' src="assets/css.png" alt="css">
-    <img class='stack-element' src="assets/js.png" alt="js">
-    <img class='stack-element' src="assets/python.png" alt="python">
-    <img class='stack-element' src="assets/sql.png" alt="sql">
-    <img class='stack-element' src="assets/C_Logo.png" alt="cpp">
-    <img class='stack-element' src="assets/c++.png" alt="c++">
-    <img class='stack-element' src="assets/php.png" alt="php">
-    <!-- <img class='stack-element' src="assets/laravel.png" alt="c"> -->
+  <div class="stack-scroll">
+    <div class="tech-stack-grid">
+      <div class="stack-item"><img class='stack-element' src="assets/html.png" alt="HTML"><span>HTML5</span></div>
+      <div class="stack-item"><img class='stack-element' src="assets/css.png" alt="CSS"><span>CSS3</span></div>
+      <div class="stack-item"><img class='stack-element' src="assets/js.png" alt="JavaScript"><span>JS</span></div>
+      <div class="stack-item"><img class='stack-element' src="assets/python.png" alt="Python"><span>Python</span></div>
+      <div class="stack-item"><img class='stack-element' src="assets/sql.png" alt="SQL"><span>SQL</span></div>
+      <div class="stack-item"><img class='stack-element' src="assets/C_Logo.png" alt="C"><span>C</span></div>
+      <div class="stack-item"><img class='stack-element' src="assets/c++.png" alt="C++"><span>C++</span></div>
+      <div class="stack-item"><img class='stack-element' src="assets/php.png" alt="PHP"><span>PHP</span></div>
+    </div>
   </div>
   <br>
   <br>
@@ -90,90 +89,131 @@
       <br>
     <div class="main-content">
 
-      <p class="about-para">
-        Hi there! My name is Arbaz, a passionate and driven professional with a knack for problem-solving and a heart for serving others. I graduated with a Bachelors in Tech in Computer Science from the University of Kashmir in 2023.
-    </p>
-    <!-- <button class="read_more">Read more</button>
-    
-    <span class="hid"> -->
-    <br>
-    <p class="about-para">
-        With experience as a Subject Matter Expert (SME) at an education firm and Software intern at a startup, I've honed my skills in understanding complex concepts and communicating them effectively. My passion lies in leveraging technology to make life easier for people, and I thrive on the challenges of software development.
-    </p>
-    <br>
-    <p class="about-para">
-        I hold certifications in various fields, including programming, web design, and content writing, which reflect my dedication to continuous learning and growth. My drive to uphold integrity and excellence in everything I do fuels my commitment to delivering high-quality work.
-    </p>
-    <br>
-    <p class="about-para">
-        Outside of the professional realm, I find joy in building things, whether it's crafting elegant code or constructing strategies to tackle real-world problems. When I'm not immersed in technology, you can find me on the cricket field, kicking a football, or engaging in the thrilling sport of arm wrestling.
-    </p>
-        
-    <br>
-    <p class="about-para">
-        Let's connect and explore how we can collaborate to create impactful solutions together.
-    </p>
-    </span>
+      <div class="about-columns">
+        <div class="about-bio about-card">
+          <h2 class="about-title"><i class="fa-solid fa-user"></i> Bio</h2>
+          <p>Hi, I'm Arbaz—a passionate developer with a knack for problem-solving and a heart for serving others. I hold a B.Tech in Computer Science from the University of Kashmir (2023).</p>
+          <p>With experience as a Subject Matter Expert and Software Intern, I thrive on leveraging technology to make life easier and enjoy the challenges of software development.</p>
+          <p>Outside of work, I love building things, playing cricket, football, and arm wrestling.</p>
+        </div>
+        <div class="about-highlights about-card">
+          <h2 class="about-title"><i class="fa-solid fa-star"></i> Highlights</h2>
+          <ul class="about-list">
+            <li><i class="fa-solid fa-comments"></i> Strong communicator & quick learner</li>
+            <li><i class="fa-solid fa-rocket"></i> Experience in EdTech & Startups</li>
+            <li><i class="fa-solid fa-certificate"></i> Certified in programming, web design, and content writing</li>
+            <li><i class="fa-solid fa-handshake"></i> Driven by integrity and excellence</li>
+            <li><i class="fa-solid fa-users"></i> Team player and creative problem solver</li>
+          </ul>
+          <h3 class="about-title"><i class="fa-solid fa-code"></i> Technical Skills</h3>
+          <ul class="about-list">
+            <li><i class="fa-brands fa-html5"></i> Web: HTML5, CSS3, JavaScript, PHP</li>
+            <li><i class="fa-brands fa-python"></i> Programming: Python, C, C++</li>
+            <li><i class="fa-solid fa-database"></i> Database: SQL</li>
+            <li><i class="fa-brands fa-github"></i> Version Control: Git & GitHub</li>
+          </ul>
+        </div>
+      </div>
 
-  </div>
+    </div>
   
   </section>
 
   <!--project section-->
-    <div class="project-section">
-      <h1 class='project'>Activities</h1>
-      <br>
-      <div class="slider">
-        <img class='slide active' src="assets/cal.png" alt="project-image" onclick="goToSlide(0)">
-        <img class='slide' src="assets/todo.png" alt="project-image" onclick="goToSlide(1)">
-        <img class='slide' src="assets/clone.png" alt="project-image" onclick="goToSlide(2)">
-        <img class='slide' src="assets/news.png" alt="project-image" onclick="goToSlide(3)">
+  <div class="project-section">
+    <h1 class='project'>Activities</h1>
+    <div class="slider">
+      <div class="slide active">
+        <div class="device-mockup">
+          <div class="device-screen">
+            <img src="assets/cal.png" alt="Calculator Project">
+          </div>
+          <div class="device-base"></div>
+        </div>
+        <div class="project-info">
+          <div class="project-title">Calculator App</div>
+          <div class="project-desc">A simple, clean calculator built with JavaScript and CSS for fast daily calculations.</div>
+          <div class="project-tech">Tech: JavaScript, HTML, CSS</div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="device-mockup">
+          <div class="device-screen">
+            <img src="assets/todo.png" alt="Todo Project">
+          </div>
+          <div class="device-base"></div>
+        </div>
+        <div class="project-info">
+          <div class="project-title">Todo List App</div>
+          <div class="project-desc">Organize your tasks efficiently with this intuitive todo list application.</div>
+          <div class="project-tech">Tech: JavaScript, HTML, CSS</div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="device-mockup">
+          <div class="device-screen">
+            <img src="assets/clone.png" alt="Clone Project">
+          </div>
+          <div class="device-base"></div>
+        </div>
+        <div class="project-info">
+          <div class="project-title">Website Clone</div>
+          <div class="project-desc">A pixel-perfect clone of a popular website, demonstrating attention to detail and UI skills.</div>
+          <div class="project-tech">Tech: HTML, CSS, JavaScript</div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="device-mockup">
+          <div class="device-screen">
+            <img src="assets/news.png" alt="News Project">
+          </div>
+          <div class="device-base"></div>
+        </div>
+        <div class="project-info">
+          <div class="project-title">News App</div>
+          <div class="project-desc">Stay updated with the latest news using this modern, responsive news app.</div>
+          <div class="project-tech">Tech: JavaScript, API, HTML, CSS</div>
+        </div>
       </div>
     </div>
-      <div class="btn"> 
-        <button class="prev" onclick="prevSlide()">Prev</button>
-        <button class="next" onclick="nextSlide()">Next</button>
-      </div>
+    <div class="btn"> 
+      <button class="prev" onclick="prevSlide()">Prev</button>
+      <button class="next" onclick="nextSlide()">Next</button>
+    </div>
+  </div>
 
+    <div activitiesclass="contact-section">
+      <h2 class="contac-head">Contact Me</h2>
+      <div class="contact-par">
+      <form method="post" id="contact_page" class="contac contact-card">
+        <div class="input-group">
+          <label for="name"><i class="fa-solid fa-user"></i> Name:</label>
+          <input placeholder="PLEASE ENTER YOUR NAME" id="nam" name="name" type="text" required>
+        </div>
+        <div class="input-group">
+          <label for="email"><i class="fa-solid fa-envelope"></i> Email:</label>
+          <input placeholder="PLEASE ENTER YOUR EMAIL"  id="email" name="email" type="email" required>
+        </div>
+        <div class="input-group">
+          <label for="phone"><i class="fa-solid fa-phone"></i> Phone:</label>
+          <input placeholder="PLEASE ENTER YOUR CELL NUMBER" id="phone" type="text" name="phone">
+        </div>
+        <div class="input-group">
+          <label id="l-msg" for="msg"><i class="fa-solid fa-message"></i> Message:</label>
+          <textarea name="msg" id="msg" rows="4" required></textarea>
+        </div>
+        <button type="button" id="button" class="submit-btn" onclick="sendEmail()">
+          <i class="fa-solid fa-paper-plane"></i> Send Email
+        </button>
+      </form>
     </div>
-
-    <section id="contact_page"></section>
-  <br>
-  <br>
-  <hr class="hr-learn">
-
-  <!--contact-->
-  <h2 class="contac-head">Contact Me</h2>
-  <br>
-  <form method="post" id="contact_page" class="contac">
-    <div>
-      <label for="name">Name:</label>
-      <input placeholder="PLEASE ENTER YOUR NAME" id="nam" name="name" type="text" required>
     </div>
-      
-    <div>
-      <label for="email">Email:</label>
-      <input placeholder="PLEASE ENTER YOUR EMAIL"  id="email" name="email" type="email" required>
-    </div>
-      
-    <div>
-      <label for="phone">Phone:</label>
-      <input placeholder="PLEASE ENTER YOUR CELL NUMBER" id="phone" type="text" name="phone">
-    </div>
-    
-    <div>
-      <label id="l-msg" for="name">Message:</label>
-      <textarea name="msg" id="msg"rows="4"required></textarea>
-    </div>
-      
-    <input style="color:white;" onMouseOver="this.style.color='#000'" onMouseOut="this.style.color='#FFF'" type="button" id="button" value="Send Email" onclick="sendEmail()" class="submit-btn">
-
-  </form>
+  </div>
 
     <!-- Footer -->
 
     <footer>
-      <div class="footer-container">
+      <div class="footer-container modern-footer">
         <a href="arbazibnishaq@gmail.com" class="footer-link">
           <i class="fa-regular fa-envelope"></i> Email
         </a>
@@ -186,9 +226,6 @@
       </div>
       <div class="cw">&copy; 2024 My Website</div>
     </footer>
-
-</div>
-
 <script>
 const phone = document.querySelector("#phone");
 window.intlTelInput(phone, {

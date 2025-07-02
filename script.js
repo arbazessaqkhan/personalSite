@@ -65,9 +65,43 @@ document.querySelector(".slider").addEventListener("mouseout", () => {
 // hamburger
 const toggleButton = document.querySelector(".nav-toggle");
 const navLinks = document.querySelector(".nav-links");
+const navOverlay = document.getElementById("nav-overlay");
+
+function closeMenu() {
+  navLinks.classList.remove("active");
+  navOverlay.classList.remove("active");
+  toggleButton.setAttribute("aria-expanded", "false");
+}
+
+function openMenu() {
+  navLinks.classList.add("active");
+  navOverlay.classList.add("active");
+  toggleButton.setAttribute("aria-expanded", "true");
+}
 
 toggleButton.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
+  if (navLinks.classList.contains("active")) {
+    closeMenu();
+  } else {
+    openMenu();
+  }
+});
+
+toggleButton.addEventListener("keydown", (e) => {
+  if (e.key === "Enter" || e.key === " ") {
+    e.preventDefault();
+    toggleButton.click();
+  }
+});
+
+navOverlay.addEventListener("click", closeMenu);
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+  link.addEventListener("click", () => {
+    if (window.innerWidth <= 991) {
+      closeMenu();
+    }
+  });
 });
 
 //make active nav on scroll
