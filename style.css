@@ -1,10 +1,12 @@
-*{
+*, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: cursive;
 }
-
+body{
+  overflow-x: hidden;
+}
 /*   --primary-btn: #007bff;
   --primary-btn: #0056b3; */
 
@@ -51,7 +53,7 @@ body{
 
 .nav-bar{
   position: sticky;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   top:0;
   background-color: #3d6b65;
   border-bottom: 2px solid black;
@@ -168,7 +170,7 @@ body{
 .project-section{
   color: #fff;
   margin-top: 15rem !important;
-  
+
 }
 .project{
   font-size: 2rem;
@@ -834,3 +836,28 @@ input{
     padding-top: 0.7rem;
   }
 }
+
+.about-columns {
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 0 1rem;
+  max-width: 100%;
+  margin: 1.2rem auto 2rem auto;
+}
+
+
+.about-bio,
+.about-highlights {
+  width: 100%;
+  max-width: 100%;
+  overflow-wrap: break-word !important;
+}
+
+.slider, .contact-par {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  overflow-x: hidden; /* optional, for extra safety */
+}
+
